@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x:hidden
+}
+
+body {
+    background-image: url('../img/back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    width: 100%;
+    height: 3rem;
+    background-color:rgb(45, 42, 42);
+    position: fixed;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.headtxt {
+    text-decoration: none;
+    color:rgba(182, 7, 7, 0.793);
+    font-size: 1.2rem;
+    font-family:monospace;
+    font-weight: bold;
+}
+
+.btntxt1 {
+    text-decoration: none;
+    color:rgba(182, 7, 7, 0.793);
+    font-size: 1.5rem;
+    font-family:monospace;
+    font-weight: bold;
+}
+
+h1 {
+    color:rgb(12, 68, 117);
+    padding-top: 10rem;
+    padding-right: 8rem;
+    width: 50%;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+}
+
+h2 {
+    color: whitesmoke;
+    padding-top: 5rem;
+    padding-right: 8rem;
+    width: 50%;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    animation: showfirst 2s ease-in 0s forwards;
+    z-index: -1;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.btn1 {
+    padding: 1rem 3rem;
+    background-color: whitesmoke;
+    border: 0.5rem outset rgb(180, 5, 5);
+}
+
+h3 {
+    margin-top: 18rem;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input {
+    padding: 0.5rem 4rem;
+    display: block;
+    margin: 2rem auto;
+    border: 0.2rem solid rgb(43, 40, 40);
+}
+
+.btn2 {
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+}
+
+.button2 {
+    margin: none;
+    padding: 1rem 4rem;
+    background-color: rgb(19, 186, 186);
+}
+
+.btntext2 {
+    color: rgb(235, 229, 229);
+    text-decoration: none;
+    font-size: 1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes showfirst {
+    0% {
+        top: 0rem;
+        transform:  scaleY(0);
+    }
+
+    40% {
+        transform:  scaleY(0.6);
+    }
+
+    80% {
+        transform: scaleY(0.95);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.headtxt:hover {
+    background-color: aliceblue;
+}
+
+.btn1:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.btntxt1:hover {
+    color:black;
+}
+
+.button2:hover {
+    background-color: rgb(101, 193, 193);
+    cursor: pointer;
+}
+
+.btntext2:hover {
+    color: black;
+}
+
+@media (max-width: 550px) {
+    .headtxt {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        max-width:100%;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 10rem;
+    }
+
+    h2 {
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 2rem;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .btn {
+        padding-top: 15rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 910px) {
+    h1 {
+        font-size: 1.8rem;
+        max-width:100%;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 10rem;
+    }
+
+    h2 {
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 5rem;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .btn {
+        padding-top: 12rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+}
