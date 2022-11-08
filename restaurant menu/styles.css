@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/background.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+h1 {
+    
+    color: rgba(245, 245, 245, 0.985);
+    font-family: "Walter Turncoat", cursive;
+    opacity: 0.9;
+    text-align: center;
+    font-style: italic;
+    text-decoration: solid;
+    padding-top: 2rem;
+}
+
+h4 {
+    color: rgba(245, 245, 245, 0.985);
+    font-family: "Walter Turncoat", cursive;
+    opacity: 0.9;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 0.5rem double rgb(174, 164, 164);
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 0.5rem double rgb(174, 164, 164);
+    padding: 2rem 0;
+}
+
+img {
+    border-radius: 20%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h2 {
+    color: rgba(245, 245, 245, 0.985) ;
+    font-family: "Walter Turncoat", cursive;
+    text-shadow: 0.2rem 0.2rem #2e2828;
+    filter: drop-shadow(0.2rem 0.1rem 0.2rem #dcd6d6fe);
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    margin-left: -1rem;
+}
+
+.menu-restaurant {
+    width: 50%;
+    float: left;
+    padding: 15px;
+    position: relative;
+    border-left: 0.1rem solid rgba(245, 245, 245, 0.985);
+    height: 4rem;
+    
+}
+
+.menu-restaurant .menu-title {
+    float: left;
+    color: rgba(245, 245, 245, 0.985) ;
+    font-family: "Walter Turncoat", cursive;
+    font-size: 0.8rem;
+}
+
+.menu-restaurant .menu-line {
+    position: absolute;
+    bottom: 6px;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
+
+.menu-restaurant .menu-price {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: rgba(245, 245, 245, 0.985) ;
+    font-family: "Walter Turncoat", cursive;
+    font-size: 0.6rem;
+}
+
+.menu-restaurant span.clearfix {
+    position: relative;
+    display: block;
+}
+
+.sweet_title {
+    text-align: center;
+    padding-top: 26rem;
+    padding-bottom: 2rem;
+    color: rgba(245, 245, 245, 0.985) ;
+    font-family: "Walter Turncoat", cursive;
+    font-size: 1.5rem;
+}
+
+.title {
+    color: rgba(245, 245, 245, 0.985) ;
+    font-family: "Walter Turncoat", cursive;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.right {
+    float: right;
+    margin-right: 1rem;
+}
+
+.subtitle {
+    color: rgba(245, 245, 245, 0.985) ;
+    font-family: "Walter Turncoat", cursive;
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    max-width: 40%;
+    padding-top: 0.5rem;
+}
+
+.sweets {
+    margin-bottom: 2rem;
+}
+
+.drinks {
+    margin-top: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: rgba(245, 245, 245, 0.985) ;
+    font-family: "Walter Turncoat", cursive;
+    font-size: 1.5rem;
+    border-top: 0.5rem double rgb(174, 164, 164);
+    padding-top: 1rem;
+}
+
+.teas {
+    text-align: center;
+    padding-top: 27rem;
+    padding-bottom: 2rem;
+    color: rgba(245, 245, 245, 0.985) ;
+    font-family: "Walter Turncoat", cursive;
+    font-size: 1rem;
+}
+
+.prices {
+    color: rgba(245, 245, 245, 0.985);
+    font-family: "Walter Turncoat", cursive;
+    text-align: center;
+    margin: none;
+    padding: none;
+}
+
+.prices:last-of-type {
+    padding-top: 2rem;
+}
+
+.footer {
+    color: rgba(245, 245, 245, 0.985);
+    font-family: "Walter Turncoat", cursive;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+@media only screen and (max-width: 350px) {
+    .menu-restaurant .menu-title {
+        font-size: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    .menu-restaurant .menu-title {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (min-width: 430px) {
+    .menu-restaurant .menu-title {
+        font-size: 0.7rem;
+    }
+
+    .menu-restaurant .menu-price {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+        padding-bottom: 2rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+    img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    h2 {
+        padding-top: 3rem;
+    }
+
+    .menu-restaurant .menu-title {
+        font-size: 1rem;
+    }
+
+    .menu-restaurant .menu-price {
+        font-size: 1rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .title {
+        font-size: 1.15rem;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    img {
+    width: 15rem;
+    height: 15rem;
+    }
+
+    
+    .menu-restaurant .menu-title {
+        font-size: 1.2rem;
+    }
+
+    .menu-restaurant .menu-price {
+        font-size: 1.2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .teas {
+        font-size: 1.2rem;
+    }
+
+    .prices {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+
+}
